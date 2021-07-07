@@ -16,7 +16,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "webpack --mode production --config ./webpack.prod.config.js",
-    "start": "webpack --mode production --config ./webpack.prod.config.js",
+    "start": "webpack --mode production --config ./webpack.prod.config.js"
 
   },
   "dependencies": {
