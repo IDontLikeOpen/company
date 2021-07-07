@@ -1,0 +1,437 @@
+.hidd, .hidd2{
+	overflow-x: hidden;
+}
+.main{
+	padding-bottom: 84px;
+}
+.main button{
+	margin-bottom: 68px;
+}
+
+.our_services {
+	overflow: hidden;
+	position: relative;
+ 	padding-bottom:100px;
+ 
+}
+.container_for_sticky{
+
+	position: relative;
+}
+.container_for_sticky_child{
+	 position: sticky;
+	position: -webkit-sticky;
+	overflow-x: hidden;
+
+	  z-index: 200;
+	  top:0px;
+}
+.our_services h3{
+	position: relative;
+}
+.our_services  .container{
+	display: block;
+	
+}
+
+.our_services .row{
+  padding-top: 56px;
+}
+
+.our_services .container{
+	overflow: hidden;
+}
+.slick-dots{
+	display: flex;
+	justify-content: center;
+}
+ .slick-dots li {
+  margin: 0;
+  margin-right: 8px;
+}
+.slick-dots li button{
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  overflow: hidden;
+  cursor: default;
+  margin-top: 0 !important;
+  font-size: 0;
+}
+.slick-dots li button:before {
+  content: "";
+  background: #C4C4C4;
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: none;
+}
+.slick-dots .slick-active button:before,  .slick-dots .active button:before{
+  background: #4183E4;
+}
+.scrolling-wrappers{
+  flex-wrap: nowrap!important;
+  transform: translateX(0);
+  padding-bottom: 6px;
+  transition: .3s linear;
+
+}
+
+.scrolling-wrappers .slick-list{
+	overflow: visible!important;
+	margin-bottom: 32px;
+
+}
+
+.scrolling-wrappers .slick-dots li button{
+	margin-bottom: 0;
+	width: 10px;
+    height: 10px;
+}
+
+.scrolling-wrappers .slick-dots li{
+	margin: 0 3px;
+	width: 10px;
+    height: 10px;
+}
+.scrolling-wrappers  .slick-dots li button:before{
+	width: 10px;
+    height: 10px;
+    font-size: 11px;
+    opacity: 1;
+    color: #C4C4C4;
+}
+.scrolling-wrappers  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #4183E4;
+}
+.scrolling-wrappers .slick-dots{
+
+	bottom: 10px;
+}
+.scrolling-wrappers .slick-track{
+	display: inline-block;
+}
+.scrolling-wrappers::-webkit-scrollbar {
+  display: none;
+}
+
+/* Stage of Works */
+
+.stages_of_work {
+  position: relative;
+  padding-bottom: 100px;
+  z-index: 400;
+}
+.stages_of_work h3{
+  margin-bottom: 60px;
+}
+
+
+.stages_content_container{
+  padding: 0 95px;
+  height: 600px;
+}
+.stages_content_container_item h4:before, .stages_panel h4:before{
+  content: url('../../src/img/design/Ellipse.svg');
+  padding-right: 5px;  
+}
+
+.stages_content_container_item h4{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3F4D65;
+  margin: 25px 0 10px;
+}
+.stages_content_container_item h4:before, .stages_panel h4:before {
+	content: url(../../src/img/design/Ellipse.svg);
+	padding-right: 5px;
+}
+.stages_content_container_item p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  margin: 0;
+}
+
+
+.solution_outline {
+    padding-bottom: 100px;
+ }
+
+.solution_outline p {
+  max-width: 536px;
+  margin: 0 auto 60px;
+}
+.solution_outline_items{
+	width: 730px;
+	margin: 0 auto 50px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.solution_outline_item{
+	margin-right: 33px;
+	margin-left: 33px;
+}
+.solution_outline_item p{
+	margin-bottom: 10px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10.4px;
+	line-height: 13px;
+	color: #B0B6C7;
+	margin-top: 8px;
+}
+.solution_outline_cont_button p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #3F4D65;
+	margin-bottom: 30px;
+}
+.solution_outline_cont_button .button_link{
+	width: 255px;
+	margin-bottom: 0;
+}
+.background2 .bg--23{
+		top: 0px;
+	}
+	.background2 .bg--24{
+		top: 107px;
+	}
+	.background2 .bg--25{
+		top: 178px;
+	}
+	.descNone{
+		display: none;
+	}
+@media (max-width: 1700px) {
+.scrolling-wrapper{
+	height:100%;
+}
+.our_services{
+		height:100%;
+
+	}
+	.our_services .row{
+	  overflow: hidden;
+	  display: flex;
+	}
+	.descNone{
+		display: block;
+	}
+	.scrolling-wrappers .slick-list{
+		width:100%;
+		overflow: hidden !important;
+	}
+	.our_services .slick-track{
+		height:100%;
+
+	}
+	.hidd, .hidd2{
+		overflow-x: visible;
+	}
+	body, html{
+		overflow-x: hidden;
+	}
+	.our_services .one_service p{
+	height:auto;
+	}
+		.scrolling-wrappers .slick-track{
+			    display: block;
+		}
+	
+	.container_for_sticky{
+		height:100%;
+	}
+	.container_for_sticky_child{
+		position: relative;
+		top:auto;
+	}
+	.background2 .bg--26{
+    	bottom: 156px;
+	}
+	.background2 .bg--27{
+		bottom: 56px;
+	}
+	.background2 .bg--28{
+		bottom: 0px;
+	}
+	
+}
+
+@media (max-width: 860px) {
+	.main{
+		padding-top:80px;
+		padding-bottom: 45px;
+	}
+	.main button{
+		margin-bottom: 15px;
+	}
+	.arrow-down svg{
+		width:38px;
+		height: 43px;
+	}
+	
+	section h3{
+		margin-bottom: 30px;
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.our_services{
+		/* height: 800px; */
+		padding-bottom: 0;
+	}
+	.our_services .row{
+		display: block;
+	}
+	.our_services .slick-list{
+		height:auto;
+		overflow: hidden !important;
+	}
+	.our_services .slick-track {
+	    height: auto;
+	}
+	.scrolling-wrapper {
+	    height: auto;
+	}
+	.our_services h3{
+		margin-bottom: 38px;
+	}
+	.our_services .one_service img{
+		height:100px;
+	}
+	.our_services .one_service{
+		padding: 70px 15px 25px;
+	}
+	.our_services .one_service p{
+		margin-bottom: 15px;
+	}
+	.stages_of_work{
+		padding-top: 43px!important;
+		padding-bottom: 80px;
+	}
+	.stages_of_work h3{
+		margin-bottom: 40px;
+	}
+	.solution_outline{
+		padding-bottom: 80px;
+	}
+	.solution_outline p{
+		max-width: 100%;
+		font-size: 14px;
+		line-height: 160%;
+		margin-bottom: 45px;
+	}
+	.solution_outline_items{
+		margin-bottom: 60px;
+		width: 100%;
+	}
+	.solution_outline_item p{
+		margin-bottom: 10px;
+		font-size: 10.4px;
+		line-height: 13px;
+	}
+	.solution_outline_cont_button p{
+		font-size: 18px;
+		line-height: 160%;
+		margin-bottom: 40px;
+	}
+	.contact_design h3{
+		color: #4183E4;
+		margin-bottom: 11px;
+	}
+	.contact p{
+		max-width: 100%;
+		font-size: 14px;
+		line-height: 160%;
+	}
+	.contact_design .contact--wrap{
+		padding-top: 24px;
+	}
+	.contact_design .contact--info .numbers li a{
+		color: #4183E4;
+	}
+	.contact form{
+		width:290px;
+	}
+	.contact form button{
+		height:60px;
+		margin-bottom: 40px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.contact form input, .contact form textarea{
+		width:100%;
+	}
+	.contact--wrap{
+		flex-wrap: wrap;
+	}
+	.contact form span{
+		font-size: 14px;
+		line-height: 17px;
+	}
+	
+}
+@media (max-width:414px) {
+	.contact form{
+		width:290px;
+	}
+	.solution_outline_items{
+		width:100%;
+	}
+	.contact--info{
+		padding-right: 22px;
+		padding-left: 22px;
+	}
+	.contact_design .contact--info .numbers li a br{
+		display: none;
+	}
+	.contact--info .numbers{
+		padding-top: 0;
+		margin: 0;
+
+	}
+}
+@media (max-width:375px) {
+	.solution_outline_item {
+	    margin-right: 20px;
+	    margin-left: 20px;
+	}
+}
+@media (max-width:320px) {
+.our_services .bg{
+	display:none;
+}
+.contact form{
+    width:100%;
+  }
+}
+
+.our_services.background2 .bg--28 {
+    right: 6px;
+    bottom: 35px;
+    z-index: 5;
+}
+.our_services.background2 .bg--27 {
+    right: 0;
+    bottom: 102px;
+    z-index: 2;
+}
+.our_services.background2 .bg--26 {
+    right: 0;
+    bottom: 200px;
+}

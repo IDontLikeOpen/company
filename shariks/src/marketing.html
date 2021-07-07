@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+  </head>
+  <body class="about-us">
+    <div class="cursor-layer">
+      <div class="cursor"></div>
+      <div class="cursor-follower">
+        <svg
+          width="80"
+          height="80"
+          viewBox="0 0 80 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 25C3 19.1652 5.31785 13.5695 9.44365 9.44365C13.5695
+          5.31785 19.1652 3 25 3C30.8348 3 36.4306 5.31785 40.5564 9.44365C44.6822 13.5695 47 19.1652 47 25C47 30.8348 44.6822 36.4306
+          40.5564 40.5564C36.4306 44.6822 30.8348 47 25 47C19.1652 47 13.5695 44.6822 9.44365 40.5564C5.31785 36.4306 3 30.8348 3 25Z"
+            stroke="black"
+            stroke-width="1"
+          />
+        </svg>
+      </div>
+    </div>
+    <header>
+      <div class="cont">
+        <div class="logo">
+          <svg
+            width="112"
+            height="41"
+            viewBox="0 0 112 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.114 19.4799C22.5408 19.4799 23.7544 19.9682 24.755 20.9448C25.7556 21.9214 26.2559 23.097 26.2559 24.4715C26.2559 25.846 25.7556 27.0215 24.755 27.9982C23.7544 28.9748 22.5408 29.4631 21.114 29.4631C19.9838 29.4631 18.9461 29.1104 18.0011 28.4051V28.4865C18.0011 28.6673 17.9548 28.8301 17.8622 28.9748C17.7881 29.1375 17.6676 29.2551 17.5009 29.3274C17.3526 29.4179 17.1859 29.4631 17.0006 29.4631C16.7226 29.4631 16.4818 29.3636 16.2779 29.1647C16.0926 28.9838 16 28.7577 16 28.4865V15.0037C16 14.7325 16.0926 14.4974 16.2779 14.2984C16.4818 14.0995 16.7226 14 17.0006 14C17.2785 14 17.5101 14.0995 17.6954 14.2984C17.8992 14.4974 18.0011 14.7325 18.0011 15.0037V20.5379C18.9461 19.8326 19.9838 19.4799 21.114 19.4799ZM18.9183 26.6146C19.5298 27.2114 20.2617 27.5098 21.114 27.5098C21.9849 27.5098 22.7168 27.2114 23.3097 26.6146C23.9212 26.0178 24.2269 25.3034 24.2269 24.4715C24.2269 23.6396 23.9212 22.9252 23.3097 22.3284C22.7168 21.7315 21.9849 21.4331 21.114 21.4331C20.2617 21.4331 19.5298 21.7315 18.9183 22.3284C18.3069 22.9252 18.0011 23.6396 18.0011 24.4715C18.0011 25.3034 18.3069 26.0178 18.9183 26.6146ZM33.2195 19.4799C33.4975 19.4799 33.7383 19.5794 33.9422 19.7783C34.146 19.9592 34.2479 20.1852 34.2479 20.4565C34.2479 20.7278 34.146 20.9629 33.9422 21.1618C33.7383 21.3427 33.4975 21.4331 33.2195 21.4331C32.3672 21.4331 31.6353 21.7315 31.0238 22.3284C30.4124 22.9252 30.1066 23.6396 30.1066 24.4715V28.4865C30.1066 28.6673 30.0603 28.8301 29.9677 28.9748C29.8935 29.1375 29.7731 29.2551 29.6063 29.3274C29.4581 29.4179 29.2913 29.4631 29.1061 29.4631C28.8281 29.4631 28.5872 29.3636 28.3834 29.1647C28.1981 28.9838 28.1055 28.7577 28.1055 28.4865V20.4294C28.1055 20.1581 28.1981 19.932 28.3834 19.7512C28.5872 19.5522 28.8281 19.4528 29.1061 19.4528C29.384 19.4528 29.6156 19.5522 29.8009 19.7512C30.0047 19.932 30.1066 20.1581 30.1066 20.4294V20.5379C31.0516 19.8326 32.0892 19.4799 33.2195 19.4799ZM43.2873 19.7783C43.4911 19.5794 43.732 19.4799 44.01 19.4799C44.2879 19.4799 44.5288 19.5794 44.7326 19.7783C44.9364 19.9592 45.0383 20.1852 45.0383 20.4565V28.4865C45.0383 28.6673 44.992 28.8301 44.8994 28.9748C44.8067 29.1375 44.677 29.2551 44.5102 29.3274C44.362 29.4179 44.1953 29.4631 44.01 29.4631C43.732 29.4631 43.4911 29.3636 43.2873 29.1647C43.102 28.9838 43.0094 28.7577 43.0094 28.4865V28.4051C42.0829 29.1104 41.0453 29.4631 39.8965 29.4631C38.4883 29.4631 37.2839 28.9748 36.2833 27.9982C35.2827 27.0215 34.7825 25.846 34.7825 24.4715C34.7825 23.097 35.2827 21.9214 36.2833 20.9448C37.2839 19.9682 38.4883 19.4799 39.8965 19.4799C41.0453 19.4799 42.0829 19.8326 43.0094 20.5379V20.4565C43.0094 20.1852 43.102 19.9592 43.2873 19.7783ZM37.7008 26.6146C38.3123 27.2114 39.0442 27.5098 39.8965 27.5098C40.7674 27.5098 41.4993 27.2114 42.0922 26.6146C42.7037 26.0178 43.0094 25.3034 43.0094 24.4715C43.0094 23.6396 42.7037 22.9252 42.0922 22.3284C41.4993 21.7315 40.7674 21.4331 39.8965 21.4331C39.0442 21.4331 38.3123 21.7315 37.7008 22.3284C37.0893 22.9252 36.7836 23.6396 36.7836 24.4715C36.7836 25.3034 37.0893 26.0178 37.7008 26.6146ZM60.691 19.4799C62.0992 19.4799 63.3037 19.9682 64.3043 20.9448C65.3049 21.9214 65.8051 23.097 65.8051 24.4715V28.4865C65.8051 28.6673 65.7588 28.8301 65.6662 28.9748C65.5735 29.1375 65.4531 29.2551 65.3049 29.3274C65.1566 29.4179 64.9899 29.4631 64.8046 29.4631C64.5266 29.4631 64.2857 29.3636 64.0819 29.1647C63.8966 28.9838 63.804 28.7577 63.804 28.4865V24.4715C63.804 23.6396 63.4983 22.9252 62.8867 22.3284C62.2752 21.7315 61.5341 21.4331 60.6632 21.4331C59.8109 21.4331 59.079 21.7315 58.4675 22.3284C57.8746 22.9252 57.5781 23.6396 57.5781 24.4715V28.4865C57.5781 28.6673 57.5318 28.8301 57.4391 28.9748C57.3465 29.1375 57.2168 29.2551 57.05 29.3274C56.9018 29.4179 56.735 29.4631 56.5497 29.4631C56.2718 29.4631 56.0309 29.3636 55.8271 29.1647C55.6418 28.9838 55.5491 28.7577 55.5491 28.4865V24.4715C55.5491 23.6396 55.2434 22.9252 54.632 22.3284C54.039 21.7315 53.3071 21.4331 52.4363 21.4331C51.5839 21.4331 50.852 21.7315 50.2406 22.3284C49.6291 22.9252 49.3234 23.6396 49.3234 24.4715V28.4865C49.3234 28.6673 49.277 28.8301 49.1844 28.9748C49.1103 29.1375 48.9898 29.2551 48.8231 29.3274C48.6748 29.4179 48.5081 29.4631 48.3228 29.4631C48.0449 29.4631 47.804 29.3636 47.6002 29.1647C47.4149 28.9838 47.3222 28.7577 47.3222 28.4865V20.4294C47.3222 20.1581 47.4149 19.932 47.6002 19.7512C47.804 19.5522 48.0449 19.4528 48.3228 19.4528C48.6007 19.4528 48.8323 19.5522 49.0176 19.7512C49.2215 19.932 49.3234 20.1581 49.3234 20.4294V20.5379C50.2683 19.8326 51.306 19.4799 52.4363 19.4799C53.2701 19.4799 54.0483 19.6608 54.7709 20.0225C55.4936 20.3842 56.0865 20.8815 56.5497 21.5145C57.0315 20.8815 57.6337 20.3842 58.3563 20.0225C59.0789 19.6608 59.8572 19.4799 60.691 19.4799ZM73.2 19.4799C74.6267 19.4799 75.8404 19.9682 76.841 20.9448C77.8415 21.9214 78.3418 23.097 78.3418 24.4715C78.3418 25.846 77.8415 27.0215 76.841 27.9982C75.8404 28.9748 74.6267 29.4631 73.2 29.4631C72.0697 29.4631 71.0321 29.1104 70.0871 28.4051V28.4865C70.0871 28.6673 70.0408 28.8301 69.9481 28.9748C69.874 29.1375 69.7536 29.2551 69.5868 29.3274C69.4386 29.4179 69.2718 29.4631 69.0865 29.4631C68.8086 29.4631 68.5677 29.3636 68.3639 29.1647C68.1786 28.9838 68.086 28.7577 68.086 28.4865V15.0037C68.086 14.7325 68.1786 14.4974 68.3639 14.2984C68.5677 14.0995 68.8086 14 69.0865 14C69.3645 14 69.5961 14.0995 69.7814 14.2984C69.9852 14.4974 70.0871 14.7325 70.0871 15.0037V20.5379C71.0321 19.8326 72.0697 19.4799 73.2 19.4799ZM71.0043 26.6146C71.6158 27.2114 72.3477 27.5098 73.2 27.5098C74.0709 27.5098 74.8028 27.2114 75.3957 26.6146C76.0072 26.0178 76.3129 25.3034 76.3129 24.4715C76.3129 23.6396 76.0072 22.9252 75.3957 22.3284C74.8028 21.7315 74.0709 21.4331 73.2 21.4331C72.3477 21.4331 71.6158 21.7315 71.0043 22.3284C70.3928 22.9252 70.0871 23.6396 70.0871 24.4715C70.0871 25.3034 70.3928 26.0178 71.0043 26.6146ZM80.9035 14.2984C81.1073 14.0995 81.3482 14 81.6261 14C81.9041 14 82.1357 14.0995 82.321 14.2984C82.5248 14.4974 82.6267 14.7325 82.6267 15.0037V28.4865C82.6267 28.6673 82.5804 28.8301 82.4877 28.9748C82.4136 29.1375 82.2932 29.2551 82.1264 29.3274C81.9782 29.4179 81.8114 29.4631 81.6261 29.4631C81.3482 29.4631 81.1073 29.3636 80.9035 29.1647C80.7182 28.9838 80.6255 28.7577 80.6255 28.4865V15.0037C80.6255 14.7325 80.7182 14.4974 80.9035 14.2984ZM85.2463 19.6969C85.4501 19.498 85.6909 19.3985 85.9689 19.3985C86.2468 19.3985 86.4784 19.498 86.6637 19.6969C86.8676 19.8778 86.9695 20.1038 86.9695 20.3751V28.4322C86.9695 28.7035 86.8676 28.9296 86.6637 29.1104C86.4784 29.3094 86.2468 29.4088 85.9689 29.4088C85.6909 29.4088 85.4501 29.3094 85.2463 29.1104C85.061 28.9296 84.9683 28.7035 84.9683 28.4322V20.3751C84.9683 20.1038 85.061 19.8778 85.2463 19.6969ZM85.2463 15.4921C85.4501 15.2931 85.6909 15.1936 85.9689 15.1936C86.2468 15.1936 86.4784 15.2931 86.6637 15.4921C86.8676 15.6729 86.9695 15.899 86.9695 16.1703V17.1469C86.9695 17.4182 86.8676 17.6533 86.6637 17.8522C86.4784 18.0511 86.2468 18.1506 85.9689 18.1506C85.6909 18.1506 85.4501 18.0511 85.2463 17.8522C85.061 17.6533 84.9683 17.4182 84.9683 17.1469V16.1703C84.9683 15.899 85.061 15.6729 85.2463 15.4921ZM94.4251 19.4799C95.8519 19.4799 97.0655 19.9682 98.0661 20.9448C99.0667 21.9214 99.567 23.097 99.567 24.4715V28.4865C99.567 28.6673 99.5206 28.8301 99.428 28.9748C99.3353 29.1375 99.2056 29.2551 99.0389 29.3274C98.8906 29.4179 98.7331 29.4631 98.5664 29.4631C98.4181 29.4631 98.2792 29.4359 98.1495 29.3817C98.0383 29.3455 97.9364 29.2822 97.8437 29.1918C97.7511 29.1014 97.677 28.9929 97.6214 28.8663C97.5658 28.7577 97.538 28.6311 97.538 28.4865V24.4715C97.538 23.6396 97.2323 22.9252 96.6208 22.3284C96.0279 21.7315 95.296 21.4331 94.4251 21.4331C93.5728 21.4331 92.8409 21.7315 92.2294 22.3284C91.618 22.9252 91.3122 23.6396 91.3122 24.4715V28.4865C91.3122 28.6673 91.2659 28.8301 91.1733 28.9748C91.0991 29.1375 90.9787 29.2551 90.8119 29.3274C90.6637 29.4179 90.4969 29.4631 90.3117 29.4631C90.0337 29.4631 89.7928 29.3636 89.589 29.1647C89.4037 28.9838 89.3111 28.7577 89.3111 28.4865V20.4294C89.3111 20.1581 89.4037 19.932 89.589 19.7512C89.7928 19.5522 90.0337 19.4528 90.3117 19.4528C90.5896 19.4528 90.8212 19.5522 91.0065 19.7512C91.2103 19.932 91.3122 20.1581 91.3122 20.4294V20.5379C92.2572 19.8326 93.2948 19.4799 94.4251 19.4799ZM110.481 19.4799C110.666 19.4799 110.833 19.5251 110.981 19.6155C111.148 19.6879 111.278 19.8054 111.371 19.9682C111.463 20.1129 111.51 20.2757 111.51 20.4565V33.9392C111.51 35.3318 111.009 36.5164 110.009 37.493C109.008 38.4696 107.794 38.958 106.368 38.958C104.96 38.958 103.755 38.4696 102.755 37.493C101.754 36.5164 101.254 35.3318 101.254 33.9392C101.254 33.686 101.346 33.46 101.532 33.261C101.735 33.0621 101.976 32.9626 102.254 32.9626C102.44 32.9626 102.606 33.0078 102.755 33.0983C102.921 33.1887 103.042 33.3062 103.116 33.4509C103.209 33.6137 103.255 33.7765 103.255 33.9392C103.255 34.7892 103.561 35.5036 104.172 36.0824C104.783 36.6792 105.515 36.9776 106.368 36.9776C107.239 36.9776 107.97 36.6792 108.563 36.0824C109.175 35.5036 109.481 34.7892 109.481 33.9392V28.4051C108.554 29.1104 107.517 29.4631 106.368 29.4631C104.96 29.4631 103.755 28.9748 102.755 27.9982C101.754 27.0215 101.254 25.846 101.254 24.4715C101.254 23.097 101.754 21.9214 102.755 20.9448C103.755 19.9682 104.96 19.4799 106.368 19.4799C107.517 19.4799 108.554 19.8326 109.481 20.5379V20.4565C109.481 20.1852 109.573 19.9592 109.759 19.7783C109.962 19.5794 110.203 19.4799 110.481 19.4799ZM104.172 26.6146C104.783 27.2114 105.515 27.5098 106.368 27.5098C107.239 27.5098 107.97 27.2114 108.563 26.6146C109.175 26.0178 109.481 25.3034 109.481 24.4715C109.481 23.6396 109.175 22.9252 108.563 22.3284C107.97 21.7315 107.239 21.4331 106.368 21.4331C105.515 21.4331 104.783 21.7315 104.172 22.3284C103.561 22.9252 103.255 23.6396 103.255 24.4715C103.255 25.3034 103.561 26.0178 104.172 26.6146Z"
+              fill="#4183E4"
+            />
+            <path
+              d="M42.8431 39.9568C42.9879 39.9568 43.1133 40.0039 43.2195 40.0981C43.3256 40.2017 43.3787 40.3242 43.3787 40.4654C43.3787 40.5408 43.3642 40.6067 43.3353 40.6633C43.3063 40.7292 43.2677 40.7857 43.2195 40.8328C43.1712 40.8799 43.1133 40.9129 43.0458 40.9317C42.9879 40.96 42.9203 40.9741 42.8431 40.9741C42.1096 40.9741 41.4824 40.7198 40.9612 40.2111C40.4401 39.7025 40.1795 39.0902 40.1795 38.3743V36.6647H38.5582C38.4135 36.6647 38.288 36.6176 38.1819 36.5234C38.0853 36.4198 38.0371 36.2973 38.0371 36.156C38.0371 36.0147 38.0853 35.8922 38.1819 35.7887C38.288 35.6851 38.4135 35.6332 38.5582 35.6332H40.1795V33.4432C40.1795 33.3019 40.2278 33.1794 40.3243 33.0758C40.4304 32.9722 40.5559 32.9204 40.7007 32.9204C40.8454 32.9204 40.9709 32.9722 41.077 33.0758C41.1832 33.1794 41.2363 33.3019 41.2363 33.4432V35.6332H42.8431C42.9879 35.6332 43.1133 35.6851 43.2195 35.7887C43.3256 35.8922 43.3787 36.0147 43.3787 36.156C43.3787 36.2973 43.3256 36.4198 43.2195 36.5234C43.1133 36.6176 42.9879 36.6647 42.8431 36.6647H41.2363V38.3743C41.2363 38.8076 41.3907 39.1797 41.6995 39.4905C42.018 39.8014 42.3992 39.9568 42.8431 39.9568ZM51.725 36.5375C52.2461 36.0289 52.8734 35.7745 53.6068 35.7745C54.3499 35.7745 54.9821 36.0289 55.5032 36.5375C56.0243 37.0462 56.2849 37.6584 56.2849 38.3743C56.2849 38.5156 56.2318 38.6381 56.1256 38.7417C56.0195 38.8359 55.894 38.883 55.7493 38.883H52.0869C52.193 39.2032 52.386 39.4623 52.6659 39.6601C52.9458 39.8579 53.2594 39.9568 53.6068 39.9568C53.684 39.9568 53.7516 39.9709 53.8095 39.9992C53.877 40.0274 53.9349 40.0604 53.9832 40.0981C54.0315 40.1452 54.0701 40.2017 54.099 40.2676C54.128 40.3336 54.1425 40.3995 54.1425 40.4654C54.1425 40.5597 54.1183 40.6444 54.0701 40.7198C54.0218 40.8045 53.9543 40.8658 53.8674 40.9035C53.7902 40.9505 53.7033 40.9741 53.6068 40.9741C52.8734 40.9741 52.2461 40.7198 51.725 40.2111C51.2039 39.7025 50.9433 39.0902 50.9433 38.3743C50.9433 37.6584 51.2039 37.0462 51.725 36.5375ZM54.5478 37.0885C54.2775 36.8907 53.9639 36.7918 53.6068 36.7918C53.2594 36.7918 52.9458 36.8907 52.6659 37.0885C52.386 37.2864 52.193 37.5454 52.0869 37.8657H55.1413C55.0255 37.5454 54.8276 37.2864 54.5478 37.0885ZM67.0225 39.9568C67.1672 39.9568 67.2929 40.0039 67.3988 40.0981C67.5048 40.2017 67.5581 40.3242 67.5581 40.4654C67.5581 40.5408 67.5436 40.6067 67.5146 40.6633C67.4857 40.7292 67.4469 40.7857 67.3988 40.8328C67.3508 40.8799 67.2929 40.9129 67.2251 40.9317C67.1672 40.96 67.0995 40.9741 67.0225 40.9741C66.2888 40.9741 65.6617 40.7198 65.1406 40.2111C64.6195 39.7025 64.3589 39.0902 64.3589 38.3743C64.3589 37.6584 64.6195 37.0462 65.1406 36.5375C65.6617 36.0289 66.2888 35.7745 67.0225 35.7745C67.0995 35.7745 67.1672 35.7887 67.2251 35.8169C67.2929 35.8357 67.3508 35.8687 67.3988 35.9158C67.4469 35.9629 67.4857 36.0194 67.5146 36.0854C67.5436 36.1513 67.5581 36.2172 67.5581 36.2832C67.5581 36.4245 67.5048 36.5469 67.3988 36.6505C67.2929 36.7448 67.1672 36.7918 67.0225 36.7918C66.5783 36.7918 66.1973 36.9473 65.8789 37.2581C65.5604 37.5689 65.4012 37.941 65.4012 38.3743C65.4012 38.8076 65.5604 39.1797 65.8789 39.4905C66.1973 39.8014 66.5783 39.9568 67.0225 39.9568ZM78.657 35.7745C79.3999 35.7745 80.0322 36.0289 80.5534 36.5375C81.0745 37.0462 81.335 37.6584 81.335 38.3743V40.4654C81.335 40.5408 81.3206 40.6067 81.2916 40.6633C81.2627 40.7292 81.2239 40.7857 81.1758 40.8328C81.1272 40.8799 81.0693 40.9129 81.0021 40.9317C80.9442 40.96 80.8765 40.9741 80.7994 40.9741C80.6547 40.9741 80.529 40.9223 80.4231 40.8187C80.3264 40.7245 80.2783 40.6067 80.2783 40.4654V38.3743C80.2783 37.941 80.1191 37.5689 79.8006 37.2581C79.4914 36.9473 79.1104 36.7918 78.657 36.7918C78.2129 36.7918 77.8319 36.9473 77.5134 37.2581C77.1949 37.5689 77.0357 37.941 77.0357 38.3743V40.4654C77.0357 40.5597 77.0114 40.6444 76.9633 40.7198C76.9245 40.8045 76.862 40.8658 76.7751 40.9035C76.6976 40.9505 76.6107 40.9741 76.5146 40.9741C76.3698 40.9741 76.2442 40.9223 76.1382 40.8187C76.0415 40.7245 75.9934 40.6067 75.9934 40.4654V33.4432C75.9934 33.3019 76.0415 33.1794 76.1382 33.0758C76.2442 32.9722 76.3698 32.9204 76.5146 32.9204C76.6593 32.9204 76.7798 32.9722 76.8765 33.0758C76.9824 33.1794 77.0357 33.3019 77.0357 33.4432V36.3256C77.5279 35.9582 78.0681 35.7745 78.657 35.7745Z"
+              fill="#4183E4"
+            />
+            <path
+              d="M0.509766 3.51992L1.87422 2.97168L6.62286 7.02519L0.509766 3.51992Z"
+              fill="#045CFC"
+            />
+            <path
+              d="M11.6368 11.3086L14.6642 17.5018L15.0703 19.2159L10.7617 24.4929L11.6368 11.3086Z"
+              fill="url(#paint0_linear)"
+            />
+            <path
+              d="M22.823 10.0046L14.6637 17.5025L11.6367 11.3099L11.6552 9.83887L22.823 10.0046Z"
+              fill="url(#paint1_linear)"
+            />
+            <path
+              d="M0 1.36875L11.766 0.0185547L11.652 11.3141L6.23022 6.69624L0 1.36875Z"
+              fill="url(#paint2_linear)"
+            />
+            <path
+              d="M22.8224 10.0039L11.732 0L11.6523 11.3157L22.8224 10.0039Z"
+              fill="url(#paint3_linear)"
+            />
+            <path
+              d="M26.7154 5.7514L23.8302 3.75342L23.1172 6.60474L26.7154 5.7514Z"
+              fill="url(#paint4_radial)"
+            />
+            <path
+              d="M23.8315 3.75293L18.3027 5.92304L22.822 10.0045L23.8315 3.75293Z"
+              fill="url(#paint5_linear)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear"
+                x1="12.0726"
+                y1="11.7291"
+                x2="11.5879"
+                y2="24.2982"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#045CFC" />
+                <stop offset="0.955108" stop-color="white" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear"
+                x1="17.0916"
+                y1="10.1549"
+                x2="14.8868"
+                y2="17.0974"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="#045CFC" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear"
+                x1="3.59805"
+                y1="2.24845"
+                x2="11.9624"
+                y2="0.973108"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="#045CFC" />
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear"
+                x1="14.7077"
+                y1="-0.677517"
+                x2="17.5382"
+                y2="11.2572"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="#045CFC" />
+              </linearGradient>
+              <radialGradient
+                id="paint4_radial"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(23.8871 4.43518) rotate(25.6911) scale(2.97487 3.89601)"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="#045CFC" />
+              </radialGradient>
+              <linearGradient
+                id="paint5_linear"
+                x1="19.8576"
+                y1="6.93116"
+                x2="23.906"
+                y2="4.23808"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="#045CFC" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <ul class="menu-top">
+          <li><a href="./aboutus.html">About us</a></li>
+          <li class="desk">
+            <div class="services-drop">
+              <a href="#">Services</a>
+              <svg
+                class="arrow"
+                width="10"
+                height="5"
+                viewBox="0 0 10 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 5L5 0L10 5H0Z" fill="#045CFC" />
+              </svg>
+            </div>
+            <ul class="services">
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Web development</a></li>
+              <li><a href="#">Landing page</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Business website</a></li>
+              <li><a href="#">Marketing</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burgerLeft">
+          <button>Get in touch</button>
+          <div class="burger">
+            <svg>
+              <defs>
+                <filter id="gooeyness">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="2.2"
+                    result="blur"
+                  />
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                    result="gooeyness"
+                  />
+                  <feComposite
+                    in="SourceGraphic"
+                    in2="gooeyness"
+                    operator="atop"
+                  />
+                </filter>
+              </defs>
+            </svg>
+            <!-- onclick="this.classList.toggle('active')" -->
+            <div class="plate">
+              <svg version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 50,35 H 30" />
+                <path class="line line2" d="M 50,35 H 70" />
+                <path class="line line3" d="M 50,50 H 30" />
+                <path class="line line4" d="M 50,50 H 70" />
+                <path class="line line5" d="M 50,65 H 30" />
+                <path class="line line6" d="M 50,65 H 70" />
+              </svg>
+              <svg
+                class="x"
+                version="1.1"
+                height="100"
+                width="100"
+                viewBox="0 0 100 100"
+              >
+                <path class="line" d="M 34,32 L 66,68" />
+                <path class="line" d="M 66,32 L 34,68" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay invisible">
+        <ul class="menu-top">
+          <li></li>
+          <li><a href="">Main</a></li>
+          <li><a href="#">About us</a></li>
+          <li>
+            <div class="services-drop">
+              <a href="#">Services</a>
+              <svg
+                class="arrow"
+                width="10"
+                height="5"
+                viewBox="0 0 10 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 5L5 0L10 5H0Z" fill="#045CFC" />
+              </svg>
+            </div>
+            <ul class="services">
+              <li>Design</li>
+              <li>Web development</li>
+              <li>Landing page</li>
+              <li>Ecommerce</li>
+              <li>Business website</li>
+              <li>Marketing</li>
+            </ul>
+          </li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container"></div>
+    <div class="particlehead"></div>
+    <div class="showcase container1 visible">
+      <div class="cont">
+        <div class="text">
+          <h1 class="reveal">
+            Create new website and develop current projects
+          </h1>
+          <p class="reveal">
+            Bring your ideas to life and improve your business with the help of
+            wise marketing strategies
+          </p>
+          <button class="reveal">Get development</button>
+        </div>
+      </div>
+    </div>
+<section id="about" class="about">
+    <div class="container">
+        <h3>Marketing and development solutions for your business</h3>
+        <p>Whatever the business, it will always be demand-driven. At an interest among buyers. Therefore, one of the most effective promotion methods is advertising and search.</p>
+        <p>And how is this in general? — you may ask. To increase your demand, you need to dominate the search, which is the key digital, marketing strategy. This will help you with SEO (search engine optimization), and PPC (Pay Per Click), thanks to which you can compete with dozens of businesses. This digital marketing strategy also works for startups.</p>
+        <p>Sure, your business may be unique and have little or no competition, but in terms of business and internet rules, you always have competitors. Why? Because they get the demand you are targeting.</p>
+        <a class="button_link  FormForHead" style="margin-top: 10px; color: #fff; max-width: fit-content;">Start promotion</a>
+    </div>
+</section>
+<section class="brief web-portfolio background2">
+    <div class="container">
+        <h3>How can you stay ahead of the competition?</h3>
+        <p>Simply by using featured services:</p>
+        <div class="brief-card">
+            <h4>Digital consulting</h4>
+            <p>Explanation of how the Internet works <br>
+            Life hacks to optimize the site or mobile application</p>
+            <a style="color: #fff;" class="main-btn  FormForHead">Get in touch</a>
+        </div>
+        <div class="brief-card">
+            <h4>SEO</h4>
+            <p>Website optimization for Google searches <br>
+                Technical SEO audit <br>
+                Semantic selection</p>
+            <a style="color: #fff;" class="main-btn  FormForHead">Get in touch</a>
+        </div>
+        <div class="brief-card">
+            <h4>PPC</h4>
+            <p>Pay for real conversions <br>
+                Website optimization for Google, Safari, and Bing searches <br>
+                Mobile and social media setting </p>
+            <a style="color: #fff;" class="main-btn  FormForHead">Get in touch</a>
+        </div>
+    </div>
+</section>
+<section class="services stages_of_work technology">
+    <div class="container">
+        <h3 style="margin-bottom: 90px;">Our competition in more details </h3>
+        <div class="service-head">
+            <div class="head-item active" data-control="1">
+                <img src="../src/img/service/serv5.png?v2" alt="">
+                <h4>Digital consulting in more detail</h4>
+                <p>Find out how you can independently learn how to customize advertising in any search engine or Social network, and how you can increase the visibility of the site without additional payments.</p>
+            </div>
+            <div class="head-item" data-control="2">
+                <img src="../src/img/service/serv6.png?v2" alt="">
+                <h4>SEO digital marketing in more details</h4>
+                <p>SEO includes a set of techniques aimed at improving visibility of a website on the search engine results page in a specific niche.</p>
+            </div>
+            <div class="head-item" data-control="3">
+                <img src="../src/img/service/serv7.png?v2" alt="">
+                <h4>PPC in more details</h4>
+                <p>PPC is a promotion method to attract a target audience using contextually relevant advertising. This method also aims to convert regular visitors into customers.</p>
+            </div>
+        </div>
+        <div class="service-content">
+            <div class="content-block" data-item="1" style="display: block;">
+                <div class="cb-cont">
+                    <div class="content-item">
+                        <h5>Explanation of how the Internet works</h5>
+                        <p>A detailed explanation of how the Internet works and how you can make the site more visible to customers. Explanation of why keywords or correct linking must be used for a website, mobile application, or brand group to function on a social network.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Life hacks to optimize the site or mobile application</h5>
+                        <p>Providing useful tools (free and paid) to help you analyze and optimize your brand online.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block" data-item="2">
+                <div class="cb-cont">
+                    <div class="content-item">
+                        <h5>Website optimization for Google Searches</h5>
+                        <p>Using various tools that will analyze the market in which you specialize and help to customize your site positively for the search engines.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Technical SEO audit</h5>
+                        <p>Conducting a thorough check of the site to identify all existing problems. After the analysis, you receive a detailed report, explanations of all existing problems are included, and recommendations are given, ranked by priority level.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Competent development of site structure</h5>
+                        <p>The semantic core covers all aspects of online search. During development, our specialist analyzes your keywords and the keywords of your competitors. Eventually, you get a list of all the keywords and can choose the most effective ones and ensure that they rank on the first page in search engines.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Semantic selection</h5>
+                        <p>After completing all the procedures and analysis, the team draws up recommendations for website design, menus, and content to meet the needs of your customers (as a part of digital content marketing).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block" data-item="3">
+                <div class="cb-cont">
+                    <div class="content-item">
+                        <h5>Google Adwords account audit</h5>
+                        <p>BramblingTech AdWords specialists help your company work with keywords, bids, and campaign settings without getting distracted from the big picture.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Google Adwords management</h5>
+                        <p>Promote your brand with active managers. BramblingTech has certified professionals to help you grow your business using the AdWords platform.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Mobile advertising</h5>
+                        <p>Get professional mobile-targeted ad customization. Pay for real clicks or user conversions.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Social media management</h5>
+                        <p>Besides online promotion, you can develop a brand on social networks and set up contextual advertising them. Stay on the same page with your customers.</p>
+                    </div>
+                    <div class="content-item">
+                        <h5>Bing/Safari ads management</h5>
+                        <p>Setting up this ad type helps you reach your users in the US and UK markets, which prefer to use Bing as their primary search engine. Take smart brand advertising.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stages_mob" id="mobServe">
+            <div class="stages_accord">
+                <button class="stages_accordion paragraph"><a href="#mobServe"> <img src="../src/img/service/serv5.png?v2" alt=""> Digital consulting in more detail</a>
+            <p>Find out how you can independently learn how to customize advertising in any search engine or Social network, and how you can increase the visibility of the site without additional payments.</p></button>
+                <div class="stages_panel">
+                    <div class="cb-cont">
+                        <div class="content-item">
+                            <h5>Explanation of how the Internet works</h5>
+                            <p>A detailed explanation of how the Internet works and how you can make the site more visible to customers. Explanation of why keywords or correct linking must be used for a website, mobile application, or brand group to function on a social network.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Life hacks to optimize the site or mobile application</h5>
+                            <p>Providing useful tools (free and paid) to help you analyze and optimize your brand online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stages_accord">
+                <button class="stages_accordion paragraph"><a href="#mobServe"> <div><img src="../src/img/service/serv6.png?v2" alt=""></div> SEO in more details</a>
+            <p>SEO includes a set of techniques aimed at improving visibility of a website on the search engine results page in a specific niche.</p></button>
+                <div class="stages_panel">
+                    <div class="cb-cont">
+                        <div class="content-item">
+                            <h5>Website optimization for Google Searches</h5>
+                            <p>Using various tools that will analyze the market in which you specialize and help to customize your site positively for the search engines.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Technical SEO audit</h5>
+                            <p>Conducting a thorough check of the site to identify all existing problems. After the analysis, you receive a detailed report, explanations of all existing problems are included, and recommendations are given, ranked by priority level.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Competent development of site structure</h5>
+                            <p>The semantic core covers all aspects of online search. During development, our specialist analyzes your keywords and the keywords of your competitors. Eventually, you get a list of all the keywords and can choose the most effective ones and ensure that they rank on the first page in search engines.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Semantic selection</h5>
+                            <p>After completing all the procedures and analysis, the team draws up recommendations for website design, menus, and content to meet the needs of your customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stages_accord">
+                <button class="stages_accordion paragraph"><a href="#mobServe"> <img src="../src/img/service/serv7.png?v2" alt=""> PPC in more details</a>
+            <p>PPC is a promotion method to attract a target audience using contextually relevant advertising. This method also aims to convert regular visitors into customers.</p></button>
+                <div class="stages_panel">
+                    <div class="cb-cont">
+                        <div class="content-item">
+                            <h5>Google Adwords account audit</h5>
+                            <p>BramblingTech AdWords specialists help your company work with keywords, bids, and campaign settings without getting distracted from the big picture.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Google Adwords management</h5>
+                            <p>Promote your brand with active managers. BramblingTech has certified professionals to help you grow your business using the AdWords platform.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Mobile advertising</h5>
+                            <p>Get professional mobile-targeted ad customization. Pay for real clicks or user conversions.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Social media management</h5>
+                            <p>Besides online promotion, you can develop a brand on social networks and set up contextual advertising them. Stay on the same page with your customers.</p>
+                        </div>
+                        <div class="content-item">
+                            <h5>Bing/Safari ads management</h5>
+                            <p>Setting up this ad type helps you reach your users in the US and UK markets, which prefer to use Bing as their primary search engine. Take smart brand advertising.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<secion class="use-tools">
+    <div class="container">
+        <h3>Want to get high web optimization in search engines?</h3>
+        <button type="button" name="button" class="ind-button FormForHead" >Get started</button>
+    </div>
+</secion>
+
+<section id="contact" class="contact background4" style="overflow: hidden">
+    <div class="container">
+      <h3>Let's chirp</h3>
+      <p class="prew-text">
+        Please feel free to ask any questions. Text us a message, stay in
+        touch, and we will contact you within one business day.
+      </p>
+      <div class="contact--wrap">
+        <form class="contact_form" action="index.php" method="post">
+          <input type="hidden" name="form" value="1" />
+          <div class="form-group row">
+            <div class="limit">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value=""
+                placeholder="John"
+                class="form-control"
+              />
+              <div class="limit_text"></div>
+            </div>
+            <div class="limit">
+              <label for="email">Your Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                value=""
+                placeholder="mymail.mail@mail.com"
+                class="form-control"
+              />
+              <div class="limit_text"></div>
+            </div>
+            <div class="limit">
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your text here..."
+                class="form-control"
+              ></textarea>
+              <div class="limit_text"></div>
+            </div>
+            <div class="requireds">All fields are required</div>
+            <button type="submit" id="send-contact">Send a message</button>
+          </div>
+        </form>
+        <div class="contact--info">
+          <ul class="numbers">
+            <li>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 10C19 14.9559 14.2243 19.2295 12.5622 20.5668C12.2293 20.8347 11.7707 20.8347 11.4378 20.5668C9.77567 19.2295 5 14.9559 5 10C5 6.13401 8.13401 3 12 3C15.866 3 19 6.13401 19 10Z"
+                  stroke="#045CFC"
+                  stroke-width="1.8"
+                />
+                <circle
+                  cx="12"
+                  cy="10"
+                  r="3"
+                  stroke="#045CFC"
+                  stroke-width="1.8"
+                />
+              </svg>
+              Harju maakond, Tallinn, Lasnamae Linnaosa,<br />
+              Peterburi tee 47
+            </li>
+            <li>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 10C19 14.9559 14.2243 19.2295 12.5622 20.5668C12.2293 20.8347 11.7707 20.8347 11.4378 20.5668C9.77567 19.2295 5 14.9559 5 10C5 6.13401 8.13401 3 12 3C15.866 3 19 6.13401 19 10Z"
+                  stroke="#045CFC"
+                  stroke-width="1.8"
+                />
+                <circle
+                  cx="12"
+                  cy="10"
+                  r="3"
+                  stroke="#045CFC"
+                  stroke-width="1.8"
+                />
+              </svg>
+              Ukraine, Odesa, Marshala Govorova st., 18
+            </li>
+            <li>
+              <a href="tel:+3728199282" target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1169 15.6803L15.4983 16.6082C15.3748 16.7934 15.2115 16.9514 14.9963 17.0083C14.2914 17.1946 12.4199 17.2787 9.5706 14.4294C6.72133 11.5801 6.80542 9.70865 6.99169 9.00372C7.04855 8.78851 7.20659 8.62521 7.3918 8.50174L8.3197 7.88314C9.01054 7.42258 9.19722 6.48919 8.73666 5.79834L6.98417 3.16961C6.58217 2.56661 5.8072 2.33624 5.14108 2.62171L4.35053 2.96052C3.74997 3.2179 3.26009 3.67982 2.96789 4.26422C2.72376 4.75247 2.53455 5.26662 2.50891 5.8119C2.42812 7.53027 2.80492 11.7638 7.52055 16.4795C12.2362 21.1951 16.4697 21.5719 18.1881 21.4911C18.7334 21.4654 19.2475 21.2762 19.7358 21.0321C20.3202 20.7399 20.7821 20.25 21.0395 19.6495L21.3783 18.8589C21.6638 18.1928 21.4334 17.4178 20.8304 17.0158L18.2017 15.2633C17.5108 14.8028 16.5774 14.9895 16.1169 15.6803Z"
+                    fill="#045CFC"
+                  />
+                </svg>
+                +3 72 81 99 3282</a
+              >
+            </li>
+            <li>
+              <a href="mailto:hello@bramblingtech.com"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.0553 4.5H3.94466C2.87065 4.5 2 5.37065 2 6.44466C2 7.10288 2.33296 7.71643 2.88484 8.07515L10.256 12.8664C10.8873 13.2767 11.2029 13.4819 11.543 13.5617C11.8436 13.6323 12.1564 13.6323 12.457 13.5617C12.7971 13.4819 13.1127 13.2767 13.744 12.8664L13.744 12.8664L21.1152 8.07515C21.667 7.71643 22 7.10288 22 6.44466C22 5.37065 21.1293 4.5 20.0553 4.5Z"
+                    stroke="#045CFC"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M21.5 8V16.3C21.5 17.4201 21.5 17.9802 21.282 18.408C21.0903 18.7843 20.7843 19.0903 20.408 19.282C19.9802 19.5 19.4201 19.5 18.3 19.5H5.69999C4.57989 19.5 4.01984 19.5 3.59201 19.282C3.21569 19.0903 2.90973 18.7843 2.71798 18.408C2.49999 17.9802 2.49999 17.4201 2.49999 16.3V8"
+                    stroke="#045CFC"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                hello@bramblingtech.com</a
+              >
+            </li>
+            <li>
+              <a href="mailto:sales@bramblingtech.com "
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.0553 4.5H3.94466C2.87065 4.5 2 5.37065 2 6.44466C2 7.10288 2.33296 7.71643 2.88484 8.07515L10.256 12.8664C10.8873 13.2767 11.2029 13.4819 11.543 13.5617C11.8436 13.6323 12.1564 13.6323 12.457 13.5617C12.7971 13.4819 13.1127 13.2767 13.744 12.8664L13.744 12.8664L21.1152 8.07515C21.667 7.71643 22 7.10288 22 6.44466C22 5.37065 21.1293 4.5 20.0553 4.5Z"
+                    stroke="#045CFC"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M21.5 8V16.3C21.5 17.4201 21.5 17.9802 21.282 18.408C21.0903 18.7843 20.7843 19.0903 20.408 19.282C19.9802 19.5 19.4201 19.5 18.3 19.5H5.69999C4.57989 19.5 4.01984 19.5 3.59201 19.282C3.21569 19.0903 2.90973 18.7843 2.71798 18.408C2.49999 17.9802 2.49999 17.4201 2.49999 16.3V8"
+                    stroke="#045CFC"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                sales@bramblingtech.com
+              </a>
+            </li>
+            <li>
+              <a title="Telegram" href="https://t.me/BTechLtd" target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM8.03558 10.9008C6.83349 11.4256 5.59835 11.9649 4.46894 12.587L4.46886 12.5871C3.87912 13.0189 4.66301 13.3243 5.39834 13.6107C5.51525 13.6563 5.63093 13.7014 5.73966 13.7464C5.83015 13.7742 5.92217 13.8035 6.01541 13.8332C6.83324 14.0938 7.74519 14.3843 8.53916 13.9472C9.84344 13.198 11.0743 12.3318 12.3042 11.4662C12.7072 11.1827 13.1101 10.8991 13.5154 10.6198C13.5343 10.6077 13.5558 10.5938 13.5792 10.5786C13.9245 10.3548 14.701 9.85146 14.4138 10.545C13.7345 11.2878 13.007 11.9454 12.2755 12.6065C11.7826 13.052 11.2878 13.4992 10.8048 13.9752C10.3841 14.317 9.94728 15.0044 10.4183 15.483C11.5033 16.2426 12.6052 16.9837 13.7065 17.7244C14.0648 17.9654 14.4231 18.2064 14.7807 18.4479C15.3868 18.9318 16.3341 18.5404 16.4673 17.7842C16.5266 17.4364 16.5861 17.0886 16.6456 16.7408C16.9744 14.8184 17.3033 12.8954 17.5938 10.9667C17.6333 10.6642 17.6781 10.3617 17.7229 10.059C17.8314 9.32549 17.9401 8.59104 17.974 7.85354C17.8865 7.11757 16.9942 7.27939 16.4975 7.44488C13.9449 8.41618 11.4178 9.45948 8.90074 10.5212C8.6156 10.6475 8.32656 10.7737 8.03558 10.9008Z"
+                    fill="#045CFC"
+                  />
+                </svg>
+                BramblingTech</a
+              >
+            </li>
+          </ul>
+          <div id="map"></div>
+          <script>
+            setTimeout(function initMap() {
+              let coordinates_estonia = {
+                lat: 59.427524,
+                lng: 24.808938,
+              };
+              popupContentEstonia =
+                '<div class = "popup-content"><p>Harju maakond, Tallinn, Lasnamae Linnaosa, Peterburi tee 47</p></div>';
+              let coordinates_odessa = {
+                lat: 46.443335,
+                lng: 30.749742,
+              };
+              popupContentOdessa =
+                '<div class = "popup-content"><p>Ukraine, Odessa, Marshala Govorova st., 18</p></div>';
+              let coordinates_center = {
+                lat: 53.901794,
+                lng: 27.566867,
+              };
+              map = new google.maps.Map(document.getElementById("map"), {
+                center: coordinates_estonia,
+                zoom: 2,
+              });
+              markerEstonia = new google.maps.Marker({
+                position: coordinates_estonia,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                icon: "../src/img/Location.svg",
+                title: "location",
+              });
+              markerOdessa = new google.maps.Marker({
+                position: coordinates_odessa,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                icon: "../src/img/Location.svg",
+                title: "location",
+              });
+              infowindowEstonia = new google.maps.InfoWindow({
+                content: popupContentEstonia,
+              });
+              infowindowOdessa = new google.maps.InfoWindow({
+                content: popupContentOdessa,
+              });
+              markerEstonia.addListener("click", function () {
+                infowindowEstonia.open(map, markerEstonia);
+              });
+              markerOdessa.addListener("click", function () {
+                infowindowOdessa.open(map, markerOdessa);
+              });
+            }, 1000);
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="menu-bottom">
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+      <li>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M32 16C32 7.1625 24.8375 0 16 0C7.1625 0 0 7.1625 0 16C0 23.9875 5.85 30.6062 13.5 31.8062V20.625H9.4375V16h23.5V12.475C13.5 8.46563 15.8875 6.25 19.5438 6.25C21.2938 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1063C19.1188 10.5 18.5 11.7344 18.5 13V16H22.9375L22.2281 20.625h28.5V31.8062C26.15 30.6062 32 23.9875 32 16Z"
+            fill="white"
+          />
+        </svg>
+      </li>
+      <li>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM7.68104 13.2519h21.307V24.1464H7.68104V13.2519ZM11.5459 9.8818C11.5223 8.8136 10.7585 8 9.51804 8C8.27762 8 7.46668 8.8136 7.46668 9.8818C7.46668 10.9279 8.25365 11.7649 9.47097 11.7649H9.49414C10.7585 11.7649 11.5459 10.9279 11.5459 9.8818ZM20.2087 12.9961C22.5948 12.9961 24.3836 14.5535 24.3836 17.8998L24.3834 24.1464H20.7576V18.3178C20.7576 16.8538 20.2329 15.8548 18.9203 15.8548C17.9186 15.8548 17.3219 16.5283 17.0598 17.1788C16.964 17.4119 16.9404 17.7367 16.9404 18.0623V24.1467h23.314C13.314 24.1467 13.3618 14.2745 13.314 13.2522h26.9404V14.7953C17.4217 14.0535 18.2836 12.9961 20.2087 12.9961Z"
+            fill="white"
+          />
+        </svg>
+      </li>
+      <li>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM19.6742 18.9226C20.6668 19.7269 21.7577 20.2208 22.9232 20.2208C24.4926 20.2208 25.773 18.938 25.7778 17.3674C25.7778 15.7921 24.4974 14.5093 22.9232 14.5093C20.8243 14.5093 20.1421 16.5383 19.9265 17.7464L19.9158 17.7879L19.6742 18.9226ZM17.3183 16.2268C18.1628 13.358 20.2416 11.6132 22.9232 11.6132C26.0881 11.6132 28.6643 14.193 28.6667 17.3555C28.6667 20.524 26.0905 23.1204 22.9256 23.1204C21.445 23.1204 20.1539 22.6691 19.0311 21.9489L17.7507 27.9862h24.7954L16.5638 19.6629C15.7288 18.6111 15.0418 17.429 14.4804 16.2575V17.519C14.4804 20.5986 11.9764 23.1263 8.90153 23.1263C5.82666 23.1263 3.32271 20.5986 3.33337 17.519V10H6.2199V17.519C6.2199 19.0008 7.42569 20.2089 8.90627 20.2089C10.3868 20.2089 11.5938 19.0008 11.5938 17.519V10h24.4792C15.0513 11.9603 16.0273 14.2878 17.3183 16.2268Z"
+            fill="white"
+          />
+        </svg>
+      </li>
+      <li>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM22.8917 12.4466h28.3722V11.1517H22.8917V12.4466ZM22.4934 13.5336C21.9495 13.293 21.3384 13.1722 20.6591 13.1722C19.5161 13.1722 18.588 13.5296 17.8705 14.2394C17.155 14.9512 16.7968 15.9738 16.7968 17.3072C16.7968 18.7288 17.1922 19.7564 17.9879 20.387C18.7796 21.0185 19.6958 21.3333 20.7343 21.3333C21.9917 21.3333 22.97 20.9591 23.6684 20.2117C24.116 19.7405 24.3688 19.2762 24.424 18.8209H22.3419C22.2215 19.0466 22.081 19.2228 21.9214 19.3505C21.6314 19.5851 21.2531 19.7029 20.7905 19.7029C20.351 19.7029 19.9767 19.6059 19.6657 19.4128C19.1519 19.103 18.883 18.5615 18.8489 17.7903H24.5314C24.5404 17.1261 24.5184 16.6153 24.4632 16.2628C24.3688 15.66 24.1621 15.1294 23.84 14.672C23.4868 14.1533 23.0383 13.7731 22.4934 13.5336ZM12.5632 10.6667C13.8496 10.6855 14.7598 11.0547 15.2966 11.7754C15.6187 12.2179 15.7803 12.7465 15.7803 13.3633C15.7803 13.9978 15.6187 14.5096 15.2926 14.8957C15.11 15.1115 14.8421 15.3095 14.4878 15.4877C15.0257 15.6817 15.4311 15.9876 15.707 16.4064C15.98 16.8241 16.1174 17.333 16.1174 17.9309C16.1174 18.5476 15.9609 19.101 15.6468 19.59C15.4481 19.9138 15.1993 20.187 14.9003 20.4087C14.5641 20.6631 14.1677 20.8364 13.7092 20.9314C13.2506 21.0255 12.7549 21.071 12.219 21.071H7.46668V10.6667h22.5632Z"
+            fill="white"
+          />
+        </svg>
+      </li>
+      <li>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM8.36488 9.30517C8.46133 9.19329 8.60232 9.12978 8.75003 9.13168L23.3425 9.13418C23.4902 9.13228 23.6312 9.19579 23.7277 9.30767C23.8241 9.41956 23.8662 9.56837 23.8425 9.71418L21.72 22.7442C21.6804 22.9887 21.4677 23.1674 21.22 23.1642h21.0375C10.7075 23.1615 10.4271 22.9222 10.3725 22.5967L8.25003 9.71168C8.22638 9.56587 8.26842 9.41706 8.36488 9.30517Z"
+            fill="white"
+          />
+          <path
+            d="M17.6866 18.4442h24.4366L13.5566 13.8467h28.4741L17.6866 18.4442Z"
+            fill="white"
+          />
+        </svg>
+      </li>
+      <li>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM15.5544 13.5586L15.5208 13.005C15.4201 11.5701 16.3042 10.2594 17.7032 9.75098C18.218 9.5702 19.0909 9.5476 19.6617 9.70578C19.8856 9.77357 20.3108 9.99955 20.613 10.2029L21.1614 10.5758L21.7658 10.3837C22.1015 10.282 22.5492 10.1125 22.7506 9.99955C22.9409 9.89786 23.1088 9.84137 23.1088 9.87526C23.1088 10.0673 22.6947 10.7227 22.3477 11.0842C21.8777 11.5927 22.012 11.6379 22.9633 11.2989C23.534 11.1068 23.5452 11.1068 23.4333 11.3215C23.3662 11.4345 23.0192 11.8299 22.6499 12.1915C22.0232 12.8129 21.9896 12.8807 21.9896 13.4005C21.9896 14.2027 21.6091 15.8749 21.2285 16.7901C20.5235 18.5075 19.0126 20.2814 17.5017 21.174C15.3753 22.4281 12.5438 22.7445 10.16 22.0101C9.36538 21.7615 8 21.1288 8 21.0158C8 20.9819 8.41409 20.9367 8.91772 20.9254C9.96973 20.9028 11.0218 20.609 11.9171 20.0893L12.5214 19.7277L11.8275 19.4905C10.8427 19.1515 9.95854 18.3719 9.73471 17.6375C9.66756 17.4002 9.68994 17.3889 10.3167 17.3889L10.9658 17.3776L10.4174 17.1177C9.76828 16.7901 9.17513 16.2364 8.88414 15.6715C8.6715 15.2647 8.4029 14.2366 8.48124 14.1575C8.50362 14.1236 8.73865 14.1914 9.00725 14.2818C9.77948 14.5642 9.8802 14.4964 9.43253 14.0219C8.59316 13.1632 8.33575 11.8864 8.73865 10.6775L8.92891 10.1351L9.66756 10.8695C11.1784 12.3497 12.9579 13.231 14.9948 13.4908L15.5544 13.5586Z"
+            fill="white"
+          />
+        </svg>
+      </li>
+    </ul>
+    Copyright © All rights reserved
+  </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"
+></script>
+<script
+  async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL9L7Vs2LCqfF1_hLEgDaVEvy7fu9lkCc&language=en&callback=initMap"
+></script>
+<script
+  type="text/javascript"
+  src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+  integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</html>
