@@ -17,7 +17,7 @@
   "scripts": {
     "build": "webpack -p --config config/prod.js",
     "start": "webpack -p --config config/prod.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    // "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "dependencies": {
     "@brunoimbrizi/controlkit": "^0.1.93",
