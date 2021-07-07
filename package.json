@@ -17,7 +17,6 @@
   "scripts": {
     "build": "webpack --mode production --config ./webpack.prod.config.js",
     "start": "webpack --mode production --config ./webpack.prod.config.js"
-
   },
   "dependencies": {
     "@brunoimbrizi/controlkit": "^0.1.93",
