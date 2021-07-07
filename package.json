@@ -16,8 +16,8 @@
   "sideEffects": false,
   "scripts": {
     "heroku-prebuild": "npm install --dev",
-    "build": "webpack -p --config config/prod.js",
-    "start": "webpack -p --config config/prod.js"
+    "build": "webpack -p --config config/dev.js",
+    "start": "webpack -p --config config/dev.js"
   },
   "dependencies": {
     "@brunoimbrizi/controlkit": "^0.1.93",
