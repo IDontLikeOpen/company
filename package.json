@@ -15,6 +15,7 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "build": "webpack -p --config config/prod.js",
     "start": "webpack -p --config config/prod.js"
   },
