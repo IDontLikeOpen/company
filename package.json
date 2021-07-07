@@ -15,8 +15,8 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
-    "build": "webpack --mode production --config ./webpack.prod.config.js",
-    "start": "webpack --mode production --config ./webpack.prod.config.js"
+    "build": "webpack -p --config config/prod.js",
+    "start": "webpack-dev-server --config config/dev.js"
   },
   "dependencies": {
     "@brunoimbrizi/controlkit": "^0.1.93",
